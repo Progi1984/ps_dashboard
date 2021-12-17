@@ -1,0 +1,27 @@
+{
+  "name": "prestashop/ps_dashboard",
+  "description": "PrestaShop module dashboard",
+  "homepage": "https://github.com/PrestaShop/ps_dashboard",
+  "license": "AFL - Academic Free License (AFL 3.0)",
+  "authors": [
+    {
+      "name": "PrestaShop SA",
+      "email": "contact@prestashop.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\Dashboard\\": "src/"
+    },
+    "classmap": [
+      "ps_dashboard.php"
+    ]
+  },
+  "type": "prestashop-module"
+}

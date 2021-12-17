@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    public: true
+
+  dashboard_repository:
+    class: PrestaShop\Module\Dashboard\Repository\DashboardRepository
+    arguments:
+      - "@doctrine.dbal.default_connection"
+      - "%database_prefix%"
+      - "@prestashop.adapter.legacy.configuration"
+      - '@prestashop.module.manager'
